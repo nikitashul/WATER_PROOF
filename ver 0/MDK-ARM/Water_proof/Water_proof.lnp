@@ -1,0 +1,26 @@
+--cpu Cortex-M0
+"water_proof\startup_stm32f030x6.o"
+"water_proof\main.o"
+"water_proof\stm32f0xx_it.o"
+"water_proof\stm32f0xx_hal_msp.o"
+"water_proof\stm32f0xx_hal_rtc.o"
+"water_proof\stm32f0xx_hal_rtc_ex.o"
+"water_proof\stm32f0xx_hal_tim.o"
+"water_proof\stm32f0xx_hal_tim_ex.o"
+"water_proof\stm32f0xx_hal_rcc.o"
+"water_proof\stm32f0xx_hal_rcc_ex.o"
+"water_proof\stm32f0xx_hal.o"
+"water_proof\stm32f0xx_hal_i2c.o"
+"water_proof\stm32f0xx_hal_i2c_ex.o"
+"water_proof\stm32f0xx_hal_gpio.o"
+"water_proof\stm32f0xx_hal_dma.o"
+"water_proof\stm32f0xx_hal_cortex.o"
+"water_proof\stm32f0xx_hal_pwr.o"
+"water_proof\stm32f0xx_hal_pwr_ex.o"
+"water_proof\stm32f0xx_hal_flash.o"
+"water_proof\stm32f0xx_hal_flash_ex.o"
+"water_proof\system_stm32f0xx.o"
+--library_type=microlib --strict --scatter "Water_proof\Water_proof.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Water_proof.map" -o Water_proof\Water_proof.axf
